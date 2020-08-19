@@ -10,11 +10,12 @@
 #include <sstream>
 #include <map>
 #include <english/german/basics.hpp>
+#include <Translatfe.hpp>
 
 int main(int argc, char **argv) {
     // ("Welcome back.")
     std::string source;
-    std::cout << "Fegeya Translatfe\nWrite [English to German]: ";
+    std::cout << "Fegeya Translatfe - " << TRANSLATFE_VERSION << "\nWrite [English to German]: ";
     
     std::getline(std::cin, source);
 
