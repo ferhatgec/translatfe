@@ -12,11 +12,16 @@
 #include <english/german/basics.hpp>
 
 int main(int argc, char **argv) {
-    std::string source("Welcome back.");
+    // ("Welcome back.")
+    std::string source;
+    std::cout << "Fegeya Translatfe\nWrite [English to German]: ";
+    
+    std::getline(std::cin, source);
+
     std::istringstream stream(source);
     std::string word;
     
-    std::cout << "Fegeya Translatfe\nEnglish : " << source << "\nGerman : ";
+    std::cout /*<< "English : " << source*/ << "German : ";
     while (stream >> word) {
         const auto &t = translations.find(word);
 
