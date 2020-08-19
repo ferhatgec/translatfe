@@ -15,6 +15,6 @@
   * [ ] Add support for Morse alphabet.
   * [ ] Add support <x> programming language to <y> language translator (Simple)
   * [ ] Add grammar rules.
-  * [ ] Input.
+  * [x] Input.
   
 #### Fegeya Translatfe licensed under the terms of MIT License.
