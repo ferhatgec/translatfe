@@ -2,7 +2,10 @@
 ## Very simple language translator written in C++.
 
 * For Educational purposes only.
-* Supports simple English-to-German syntax.
+* Supports simple x syntax.
+
+* x
+  * English-to-German, Turkish.
 
 #### Why?
   * For:
