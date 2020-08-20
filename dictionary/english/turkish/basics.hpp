@@ -42,7 +42,8 @@ static std::map<std::string, std::string> en_tr_translations {
 	{"book", "kitap"},
 	{"yes", "Evet"},
 	{"no", "Hayır"},
-	{"translator", "çevirmen"} /* TODO: Nominativ Possessivpronomen */
+	{"translator", "çevirmen"}, /* TODO: Nominativ Possessivpronomen */
+  {"developer", "geliştirici"}
 };
 
 #endif // TURKISH_BASICS_HPP

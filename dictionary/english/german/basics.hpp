@@ -43,7 +43,8 @@ static std::map<std::string, std::string> en_ger_translations {
 	{"book", "Buch [das]"},
 	{"yes", "Ja"},
 	{"no", "Nein"},
-	{"translator", "übersetzer"} /* TODO: Nominativ Possessivpronomen */
+	{"translator", "übersetzer"}, /* TODO: Nominativ Possessivpronomen */
+  {"developer", "Entwickler"}
 };
 
 #endif // GERMAN_BASICS_HPP

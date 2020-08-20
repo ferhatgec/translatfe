@@ -1,3 +1,4 @@
 #!/bin/sh
 
-g++ -I./dictionary/ -I./include/ ./src/Language.cpp ./src/Translatfe.cpp  -o tlatfe && ./tlatfe
+g++ -I./dictionary/ -I./include/ ./src/Language.cpp \
+./src/Translatfe.cpp  -o tlatfe && ./tlatfe --etog Hello developer
