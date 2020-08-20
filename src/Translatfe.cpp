@@ -23,6 +23,7 @@ void Translate(std::string source, int lang) {
     std::unique_ptr<FLanguage> language(new FLanguage);
     if(lang == 1) language->English_to_German(source);
     else if(lang == 2) language->English_to_Turkish(source);
+    else if(lang == 3) language->String_to_Morse(source);
     else std::cout << "Language not defined.\n";
 }
 
@@ -46,6 +47,8 @@ int main(int argc, char **argv) {
 		Translate(reg, 1);
      else if(copy_arg == "--etot")
     Translate(reg, 2);
+     else if(copy_arg == "--stom")
+    Translate(reg, 3);
      else
     std::cout << "Language not defined!";
 	   /*else if(reg == "--h" || reg == "--help")

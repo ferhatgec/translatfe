@@ -13,6 +13,9 @@
 
 class FLanguage {
 public:
+  std::string Char_to_Morse(char16_t);
+  std::string Morse_to_String(std::string);
+  void String_to_Morse(std::string);
   void English_to_German(std::string);
   void English_to_Turkish(std::string);
 };
