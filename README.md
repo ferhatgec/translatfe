@@ -6,6 +6,7 @@
 
 * x
   * English-to-German, Turkish.
+  * String-to-Morse, Morse-to-String.
 
 #### Why?
   * For:
@@ -15,7 +16,7 @@
 
 * TODO: 
   * [ ] Support basics of English-to-German.
-  * [ ] Add support for Morse alphabet.
+  * [x] Add support for Morse alphabet.
   * [ ] Add support <x> programming language to <y> language translator (Simple)
   * [ ] Add grammar rules.
   * [x] Input.
