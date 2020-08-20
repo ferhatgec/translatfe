@@ -5,13 +5,13 @@
 #
 */
 
-#ifndef BASICS_HPP
-#define BASICS_HPP
+#ifndef GERMAN_BASICS_HPP
+#define GERMAN_BASICS_HPP
 
 #include <cstring>
 #include <map>
 
-static std::map<std::string, std::string> translations {
+static std::map<std::string, std::string> en_ger_translations {
      	{"I", "Ich"},
      	{"You", "Du"},
 	{"He", "Er"},
@@ -46,4 +46,4 @@ static std::map<std::string, std::string> translations {
 	{"translator", "übersetzer"} /* TODO: Nominativ Possessivpronomen */
 };
 
-#endif // BASICS_HPP
+#endif // GERMAN_BASICS_HPP
