@@ -18,6 +18,13 @@
 #include <Translatfe.hpp>
 #include <Language.hpp>
 
+void HelpFunction(const char* arg) {
+	std::cout << arg << " <argument>\nargument:\n" << 
+	"--etog : English to German\n" <<
+	"--etot : English to Turkish\n" <<
+	"--stom : String to Morse\n" << 
+	"--mtos : Morse to String"; 
+}
 
 void Translate(std::string source, int lang) {
     std::unique_ptr<FLanguage> language(new FLanguage);
@@ -28,32 +35,31 @@ void Translate(std::string source, int lang) {
     else std::cout << "Language not defined.\n";
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
     std::string copy_arg, reg;
 
     if(argc > 1) {
         for(int i = 2; i < argc; i++) {
-	    std::string arg(argv[i]);
-	    reg.append(argv[i]);
-	    reg.append(" ");
-	    copy_arg = argv[1];
-	}
-
-    } else {
-        // HelpFunction()
-    }
+	    	std::string arg(argv[i]);
+	    	reg.append(argv[i]);
+	    	reg.append(" ");
+	    	copy_arg = argv[1];
+		}
+    } else HelpFunction(argv[0]);
 
     if(copy_arg.substr(0, 2) == "--") {
 	   if(copy_arg == "--etog") // English to German
-		Translate(reg, 1);
-     else if(copy_arg == "--etot")
-    Translate(reg, 2);
-     else if(copy_arg == "--stom")
-    Translate(reg, 3);
-     else if(copy_arg == "--mtos")
-    Translate(reg, 4);
-     else
-    std::cout << "Language not defined!";
+			Translate(reg, 1);
+		else if(copy_arg == "--etot")
+    		Translate(reg, 2);
+     	else if(copy_arg == "--stom")
+    		Translate(reg, 3);
+     	else if(copy_arg == "--mtos")
+    		Translate(reg, 4);
+     	else {
+    		std::cout << "Language not defined!\n";
+    		HelpFunction(argv[0]);
+	   	}
 	   /*else if(reg == "--h" || reg == "--help")
 		// HelpFunction()
 	   else if(reg == "--v" || reg == "--version")
