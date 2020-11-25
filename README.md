@@ -5,7 +5,7 @@
 * Supports simple x syntax.
 
 * x
-  * English-to-German, Turkish.
+  * English-to-German, Turkish, Spanish.
   * String-to-Morse, Morse-to-String.
 
 #### Why?
@@ -15,7 +15,7 @@
      * Fun!
 
 * TODO: 
-  * [ ] Support basics of English-to-German.
+  * [x] Support basics of English-to-German.
   * [x] Add support for Morse alphabet.
   * [ ] Add support <x> programming language to <y> language translator (Simple)
   * [ ] Add grammar rules.
