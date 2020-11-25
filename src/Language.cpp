@@ -13,38 +13,63 @@
 // Languages
 #include <english/german/basics.hpp>
 #include <english/turkish/basics.hpp>
+#include <english/spanish/basics.hpp>
 
 #include <Translatfe.hpp>
 #include <Language.hpp>
 
+/* TODO:
+	Add: Translator(string text, map &language) {} function.
+*/
+	
 void
 FLanguage::English_to_German(std::string en) {
-  std::string word;
-  std::istringstream stream(en);
-  std::cout /*<< "English : " << source*/ << "German : ";
-  while (stream >> word) {
-      const auto &t = en_ger_translations.find(word);
+	std::string word;
+  	std::istringstream stream(en);
+  	std::cout << "German : ";
+  
+  	while(stream >> word) {
+    	const auto &t = en_ger_translations.find(word);
 
-      if (t != en_ger_translations.end()) // Found
-          std::cout << t->second << " ";
-      else
-          std::cout << word << " ";
-  }
+      	if (t != en_ger_translations.end()) // Found
+        	std::cout << t->second << " ";
+      	else
+        	std::cout << word << " ";
+  	}
+}
+
+void
+FLanguage::English_to_Spanish(std::string en) {
+	std::string word;
+  	std::istringstream stream(en);
+  	
+  	std::cout << "Spanish : ";
+  
+  	while(stream >> word) {
+    	const auto &t = en_sp_translations.find(word);
+
+      	if (t != en_tr_translations.end()) // Found
+          	std::cout << t->second << " ";
+      	else
+          	std::cout << word << " ";
+  	}
 }
 
 void
 FLanguage::English_to_Turkish(std::string en) {
-  std::string word;
-  std::istringstream stream(en);
-  std::cout /*<< "English : " << source*/ << "Turkish : ";
-  while (stream >> word) {
-      const auto &t = en_tr_translations.find(word);
+	std::string word;
+  	std::istringstream stream(en);
+  	
+  	std::cout << "Turkish : ";
+  
+  	while(stream >> word) {
+    	const auto &t = en_tr_translations.find(word);
 
-      if (t != en_tr_translations.end()) // Found
-          std::cout << t->second << " ";
-      else
-          std::cout << word << " ";
-  }
+      	if(t != en_tr_translations.end()) // Found
+        	std::cout << t->second << " ";
+      	else
+        	std::cout << word << " ";
+  	}
 }
 
 /*
